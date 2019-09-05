@@ -1,0 +1,7 @@
+tr a{
+  color: white;
+}
+tr a:hover {
+  color: #dbdbdb;
+  text-decoration: none;
+}
