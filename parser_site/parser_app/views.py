@@ -15,7 +15,7 @@ def index(request):
     return render(request, 'parser_app/index.html', context)
 
 from selenium import webdriver
-import time
+from time import sleep
 from lxml import html
 from bs4 import BeautifulSoup
 from .defs import printProgressBar
@@ -48,7 +48,7 @@ def update(request):
         print(' - ошибка')
     print('[DEBUG]: Загружаю страницу')
     for i in range(10):
-        time.sleep(1)
+        sleep(1)
         printProgressBar(i + 1, 10, prefix = '[DEBUG]:', suffix = ' Процесс', length = 50)
     print('[DEBUG]: получаю HTML страницы', end=' ')
     try:
