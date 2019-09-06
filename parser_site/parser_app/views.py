@@ -1,3 +1,6 @@
+#!/usr/local/bin/python3
+# -*- coding: utf-8 -*-
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import PariMatch
